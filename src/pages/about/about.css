@@ -1,0 +1,47 @@
+
+.a {
+    text-align: center;
+    font-size: 18px;
+}
+.a span {
+    color: var(--main-color);
+}
+.about-content {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.about-right > * {
+    margin-bottom: 20px;
+}
+.about-right h2 {
+    font-size: 30px;
+}
+.about-right h2 span {
+    color: var(--main-color);
+}
+.about-right p {
+    color: gray;
+    line-height: 1.5;
+    width: 600px;
+    font-weight: bold;
+}
+.about-right p span {
+    color: var(--main-color);
+    font-size: 25px;
+}
+.about-right button {
+    padding: 10px;
+    width: 200px;
+    border: none;
+    background-color: transparent;
+    border: 2px solid var(--main-color);
+    font-size: 22px;
+    color: var(--main-color);
+    transition: 0.5s;
+}
+.about-right button:hover {
+    background-color: var(--main-color);
+    color: #fff;
+}

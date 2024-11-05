@@ -1,0 +1,124 @@
+nav {
+    background-color: #3d464d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    position: sticky;
+    top: 0;
+    z-index: 10000;
+}
+nav h2 {
+    color: #fff;
+}
+nav h2 span {
+    color: var(--main-color);
+}
+ nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+
+}
+ul a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bolder;
+    transition: 0.5s;
+}
+
+ul a:hover {
+    color: var(--main-color);
+}
+ .moon-icons, 
+ .sun-icons {
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+ .sun-icons {
+    animation: sun 3s infinite;
+}
+@keyframes sun {
+    0% {
+        transform: rotate(0deg);
+    } 100% {
+        transform: rotate(360deg);
+    }
+}
+nav .navbar-icons {
+    display: flex;
+    gap: 30px;
+}
+nav .navbar-icons .nav-icons{
+    color: var(--main-color);
+    font-size: 20px;
+}
+nav .navbar-icons  span {
+    font-size: 15px;
+    color: #fff;
+    cursor: pointer;
+}
+.products-name {
+    position: relative;
+}
+.product-toggle {
+    position: absolute;
+    top: 45px;
+    left: -70px;
+    background-color: #ccc;
+    padding: 15px;
+    width: 210px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+}
+.product-toggle a:hover {
+    padding: 10px;
+    background-color: var(--main-color);
+    color: #fff;
+    
+}
+
+nav .menu {
+    font-size: 20px;
+    cursor: pointer;
+    color: #fff;
+    display: none;
+}
+
+@media screen  and (max-width: 800px){
+    nav {
+        position: relative;
+    }
+    nav ul {
+        position: absolute;
+        flex-direction: column;
+        background-color: var(--main-color);
+        top: 68px;
+        right: 0;
+        width: 300px;
+        padding: 20px;
+        opacity: 0;
+        transition: 1s;
+    }
+    nav:hover ul {
+        opacity: 1;
+    }
+    nav ul a {
+        display: block;
+        text-align: center;
+    }
+    nav ul a:hover {
+        color: gray;
+    }
+    nav ul li{
+        display: block;
+        text-align: center;
+    }
+    nav .menu {
+        display: block;
+    }
+}

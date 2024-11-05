@@ -1,0 +1,11 @@
+
+
+.imges {
+    background-color: #ddd;
+    padding: 30px;
+
+}
+.imges img {
+    height: 200px;
+    margin-left: 50px;
+}

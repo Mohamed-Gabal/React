@@ -1,0 +1,41 @@
+
+.categorys h2 {
+    text-align: center;
+    color: var(--main-color);
+    font-size: 35px;
+}
+.categorys-div {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+.categorys-div .category {
+    width: 22%;
+    background-color: #fff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.categorys-div .category img {
+    width: 70px;
+}
+.categorys-div .category p {
+    font-weight: bold;
+    opacity: 0.7;
+    margin-top: 10px;
+    color: gray;
+}
+
+
+@media screen  and (max-width: 800px){
+    .categorys-div {
+        flex-direction: column;
+    }
+    .categorys-div .category {
+        width: 90%;
+        margin-left: 10px;
+    }
+}
